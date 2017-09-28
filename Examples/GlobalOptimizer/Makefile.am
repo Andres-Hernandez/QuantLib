@@ -12,7 +12,6 @@ GlobalOptimizer_LDADD = ../../ql/libQuantLib.la ${BOOST_THREAD_LIB}
 
 EXTRA_DIST = \
     GlobalOptimizer.dev \
-    GlobalOptimizer_vc8.vcproj \
     GlobalOptimizer_vc9.vcproj \
     GlobalOptimizer.vcxproj \
     GlobalOptimizer.vcxproj.filters \

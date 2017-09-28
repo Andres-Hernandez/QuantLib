@@ -23,7 +23,7 @@ FOR A PARTICULAR PURPOSE.  See the license for more details.
 
 #include <ql/experimental/math/fireflyalgorithm.hpp>
 #include <ql/math/randomnumbers/sobolrsg.hpp>
-
+#include <boost/math/special_functions/fpclassify.hpp>
 #include <algorithm>
 
 namespace QuantLib {
@@ -195,7 +195,11 @@ namespace QuantLib {
                         }
                     }
                     Real val = P.value(z);
+<<<<<<< HEAD
                     if(!std::isnan(val))
+=======
+                    if(!boost::math::isnan(val))
+>>>>>>> 9709f205dcc3b27f10ae7e816bc47973e32b42a3
 					{
 						//Accept new point
                         x = z;
